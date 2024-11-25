@@ -1,0 +1,85 @@
+﻿/* Changement du fond global à jaune */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFD700; /* Jaune */
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête avec fond noir et texte jaune */
+.header {
+    text-align: center;
+    background-color: #000000; /* Noir */
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.header h1, .header p {
+    color: #FFD700; /* Jaune */
+}
+
+/* Section container avec fond jaune et texte noir */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #FFD700; /* Jaune */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    color: #000000; /* Texte noir */
+}
+
+/* Formulaire avec champs de texte noirs */
+form {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fond blanc pour les inputs */
+    color: #000; /* Texte noir */
+}
+
+/* Bouton avec fond noir et texte jaune */
+button {
+    background-color: #000000; /* Noir */
+    color: #FFD700; /* Jaune */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444; /* Gris foncé au survol */
+}
+
+/* Image du drapeau marocain */
+.morocco-flag {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Style pour le footer */
+footer {
+    background-color: #000000; /* Noir */
+    color: #FFD700; /* Jaune */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optionnel : effet de survol pour le texte dans le footer */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

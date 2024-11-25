@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de l'essai statique et dynamique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/2560px-Flag_of_Morocco.svg.png" alt="Drapeau du Maroc" class="morocco-flag">
+        <h1>Calcul de la valeur d'essai statique et dynamique</h1>
+        <p><strong>Conformément à la réglementation marocaine : En application de l'article 32 de l'arrêté du 09 septembre 1953 et de l'arrêté du 03 novembre 1953.</strong></p>
+    </div>
+
+    <div class="container">
+        <!-- Suppression de la deuxième occurrence du texte ici -->
+        
+        <form id="calculationForm">
+            <label for="charge">Charge admissible (en tonnes) :</label>
+            <input type="number" id="charge" name="charge" step="0.01" placeholder="Entrez la charge en tonnes" required>
+            <br><br>
+            <label>Type d'essai :</label>
+            <select id="testType" name="testType">
+                <option value="statique">Statique</option>
+                <option value="dynamique">Dynamique</option>
+            </select>
+            <br><br>
+            <button type="button" onclick="calculate()">Calculer les valeurs d'essai</button>
+        </form>
+
+        <h2>Résultats :</h2>
+        <p id="result"></p>
+
+        <h3>Cas d'essai selon la réglementation :</h3>
+        <ul>
+            <li>Avant la mise en service dans l’établissement.</li>
+            <li>À la suite d’un démontage suivi d’un remontage.</li>
+            <li>À la suite d’un accident ayant provoqué la défaillance d’un organe essentiel.</li>
+            <li>Après toute réparation ou transformation importante intéressant les organes essentiels.</li>
+        </ul>
+    </div>
+
+    <!-- Footer avec le droit d'auteur sans "Tous droits réservés" -->
+    <footer>
+        <p>&copy; 2024 Geanah Adil</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
